@@ -1,3 +1,6 @@
+#source code
+https://github.com/pleabargain/gpt_generated_fastapi_app
+
 # what is this?
 I'm trying to get GPT4 to generate FastAPI and pydantic applications that use OPENAI.
 
