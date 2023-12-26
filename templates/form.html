@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Story Generator</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/templates/icons8-home-64.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/templates/icons8-home-64.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/templates/icons8-home-64.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+    <form action="/submit_form" method="post">
+        <label for="genre">Choose a genre:</label>
+        <select name="genre" id="genre">
+            {% for genre in genres %}
+            <option value="{{ genre.name }}">{{ genre.name }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="max_tokens">Max Tokens:</label>
+        <input type="number" id="max_tokens" name="max_tokens" value="100" min="1" max="1000">
+
+        <input type="submit" value="Generate Story">
+    </form>
+</body>
+</html>
