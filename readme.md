@@ -1,27 +1,43 @@
+# what is this?
+I'm trying to get GPT4 to generate FastAPI and pydantic applications that use OPENAI.
+
+Ironically gpt4 isn't aware of the latest v. of openai and the code keeps defaulting to davinci!
+
+I generated the 'genres' in seconds and that output goes straight to the UI so there is less fussing with the code. That being said, jinja is easy but it's still messy.
+
 # assumptions
-A lot of them. I'm no dev but you definitely need to know how to manipulate VS Code and how to be patient with errors!
+A lot of them. I'm no dev. 
+
+That being said, you definitely need to know how to manipulate VS Code and how to be patient with errors!
+
+I keep this readme open while I debug and remember stuff.
 
 1. set up
 
+```
 python -m venv venv
-
+```
 
 2. activate
+```
 .\venv\Scripts\activate
-
+```
 3. set up .env
 
-set API key
+set your API key
 
 4. install requirments
+```
 pip install -r requirements.txt
-
+```
 5. run it
+```
 uvicorn main:app --reload
-
+```
 6. hide env file
+```
 echo .env >> .gitignore
-
+```
 
 # resources
 * https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo
@@ -32,9 +48,12 @@ echo .env >> .gitignore
 
 # TODO
 So much!
+
 GPT4 can take in a lot of data but it doesn't spit out that much so you have to read the output carefully.
 
-The output is UGLY.
+The story output is UGLY. 
+
+And,  I haven't figured out how to get the output as JSON.
 
 * save the ouput to a new file
 * save the output to a database
