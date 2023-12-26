@@ -41,8 +41,12 @@ async def read_form(request: Request):
         Genre(name="Fantasy"),
         Genre(name="Mystery"),
         Genre(name="Thriller"),
+        Genre(name="Superhero"),
+        Genre(name="Historical Fiction"),   
+        Genre(name="Romance in Paris in the 1920s"),
         Genre(name="Action"),
         Genre(name="Adventure"),
+        Genre(name="Biography of a Real Person"),
         Genre(name="Crime"),
         Genre(name="Drama"),
         Genre(name="Historical"),
@@ -85,7 +89,7 @@ async def form_post(request: Request, genre: str = Form(...)):
                 }
             ],
                 max_tokens=form_data.max_tokens,
-                model="gpt-4-1106-preview",
+                model="gpt-4",
         )
 
         # Extracting the story text

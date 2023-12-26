@@ -1,6 +1,9 @@
 #source code
 https://github.com/pleabargain/gpt_generated_fastapi_app
 
+# video
+https://youtu.be/uN3_lGWU94s
+
 # what is this?
 I'm trying to get GPT4 to generate FastAPI and pydantic applications that use OPENAI.
 
@@ -59,6 +62,7 @@ The story output is UGLY.
 And,  I haven't figured out how to get the output as JSON.
 
 * save the ouput to a new file
+* display and save the output as JSON
 * save the output to a database
 
 
